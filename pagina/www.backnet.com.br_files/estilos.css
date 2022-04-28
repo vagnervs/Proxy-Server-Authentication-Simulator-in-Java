@@ -1,0 +1,387 @@
+/* CSS BACKNET */
+@font-face { 
+  font-family: hiruko; 
+    src: url('fonts/hiruko.eot'); 
+    src: local("hiruko"), url('fonts/hiruko.ttf'); 
+} 
+@font-face {
+	font-family:"DejaVu Sans";
+	src:url("fonts/DejaVuSans.eot?") format("eot"),
+		url("fonts/DejaVuSans.woff") format("woff"),
+		url("fonts/DejaVuSans.ttf") format("truetype"),
+		url("fonts/DejaVuSans.svg#DejaVuSans") format("svg");font-weight:normal;font-style:normal;}
+@font-face {
+	font-family:"Champagne";
+	src:url("fonts/Champagne_Limousines.eot?") format("eot"),
+		url("fonts/Champagne_Limousines.woff") format("woff"),
+		url("fonts/Champagne_Limousines.ttf") format("truetype"),
+		url("fonts/Champagne_Limousines.svg#Champagne") format("svg");
+		font-weight:normal;font-style:normal;}	
+@font-face {
+	font-family:"OpenSansB";
+	src:url("fonts/OpenSans-ExtraBold-webfont.eot?") format("eot"),
+		url("fonts/OpenSans-ExtraBold-webfont.woff") format("woff"),
+		url("fonts/OpenSans-ExtraBold-webfont.ttf") format("truetype"),
+		url("fonts/OpenSans-ExtraBold-webfont.svg#OpenSansB") format("svg");
+		font-weight:normal;font-style:normal;}	
+@font-face {
+	font-family:"OpenSansR";
+	src:url("fonts/OpenSans-Regular-webfont.eot?") format("eot"),
+		url("fonts/OpenSans-Regular-webfont.woff") format("woff"),
+		url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"),
+		url("fonts/OpenSans-Regular-webfont.svg#OpenSansR") format("svg");
+		font-weight:normal;font-style:normal;}		
+@font-face {
+	font-family:"OpenSansS";
+	src:url("fonts/OpenSans-Semibold-webfont.eot?") format("eot"),
+		url("fonts/OpenSans-Semibold-webfont.woff") format("woff"),
+		url("fonts/OpenSans-Semibold-webfont.ttf") format("truetype"),
+		url("fonts/OpenSans-Semibold-webfont.svg#OpenSansS") format("svg");
+		font-weight:normal;font-style:normal;}									
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent }
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+html, body {width:100%;height: 100%;}
+body {background: #ccc;font-size:14px; font-family: Arial, Arial, sans-serif; text-align:left;}
+a:focus{outline:1px dotted invert}
+hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}
+h1{font-size:28px}
+h2{font-size:23px;}
+h3{font-size:21px}
+h4{font-size:19px}
+h5{font-size:17px}
+h6{font-size:15px}
+ol{list-style:decimal}
+li{margin-left:20px;}
+p { padding:5px;font-size:16px; font-family: Arial, Arial, sans-serif; text-align:left;  }
+p.linha { padding:5px 20px 10px 20px; text-align:justify;font-size:13px; }
+p.post { padding:5px 20px 10px 20px; text-align:justify;font-size:12px; }
+p.box {  padding:5px;font-size:12px; font-family: Arial, Arial, sans-serif;  text-align:left }
+
+.limpatudo { clear:both }
+.limpa, br { clear:left }
+.limpadir { clear:right }
+span.preto			{ color:#000000 }
+span.cinzaclaro		{ color:#b8b8b8 }
+span.cinzaescuro	{ color:#777777 }
+span.branco			{ color:#FFFFFF }
+span.azul			{ color:#3b85e5 }
+span.azulclaro		{ color:#02d5fb }
+span.verde 			{ color:#04b21d }
+span.verdeclaro		{ color:#84faa0 }
+span.lilas 			{ color:#9403fa }
+span.rosa 			{ color:#e457f9 }
+span.laranjado 		{ color:#fecb01}
+span.vermelho 		{ color:#ff0000 }
+span.vermelhoclaro	{ color:#fc6c76 }
+span.amarelo 		{ color:#fff002 }
+.focus_in 	{  
+     background:#f9f9b1;  
+} 
+.focus_op 	{  
+     background:#ccc;  
+} 
+.focus_out {  
+     background:#fff;  
+}
+span.creditos { font-style:italic;font-size:10px }
+a.noticias_tit { text-decoration:none;color:#038dfd; }
+a.noticias_tit:hover { text-align:left;text-decoration:underline;color:#990000 } 
+a.noticias { text-decoration:none;color:#6a6a6a; }
+a.noticias:hover { text-align:left;text-decoration:underline;color:#000 } 
+a.noticias_tit_esq { text-decoration:none;color:#025a9d; }
+a.noticias_tit_esq:hover { text-align:left;text-decoration:underline;color:#990000 } 
+a.textomenu { text-decoration:none; }
+a.linknada { text-decoration:none; }
+a.linknada:hover { text-decoration: underline }
+#faixasuperior {width:100%;height:463px;text-align:center;background: #fff url(../images/estrutura/fundo_faixasuperior.jpg) repeat-x;}
+#home {width:100%;text-align:center;margin:0;background: #fff; }
+#faixainferior {width:100%;height:230px;text-align:center;background: #1a1a1a url(../images/estrutura/fundo_faixainferior.jpg) repeat-x;}
+#cabecalho {width:1000px;height:463px;margin:0 auto; }
+#cabecalho_logo {display:inline;float:left;width:250px;height:85px;background: url(../images/estrutura/fundo_cabecalho.jpg) no-repeat;}
+#cabecalho_logo h1 { text-align:right;margin:120px 20px 0 0;color: #fabb0c}
+#cabecalho_logo p { text-align:right;font-size:14px;margin:5px 20px 0 0px;color: #cecece}
+#cabecalho_cen {display:inline;float:left;width:445px;height:85px;background: url(../images/estrutura/cabecalho_centro.jpg) no-repeat;}
+#cabecalho_cen p { text-align:center;margin-top:20px;color:#ccc;font-size:12px; }
+#cabecalho_dir {display:inline;float:left;width:305px;height:85px;}
+#cabecalho_dir p { text-align:left;margin: 10px 0 0 93px;font-size:12px; }
+#cabecalho_dir a { color:#ccc;text-decoration:none; }
+#cabecalho_dir a:hover { text-decoration: underline }
+#cabecalho_dir_menutop {display:inline;float:left;width:640px;height:85px;text-align:right;}
+#cabecalho_dir_menutop p { margin:45px 30px 0 0; text-align:right; }
+#cabecalho_dir_menutop a { text-decoration:none;color:#003300;font-size:19px; cursor:pointer;margin:0 0 0 40px;padding:5px; }
+#cabecalho_dir_menutop a:hover { text-decoration:none;color:#fff;padding:5px }
+#cabecalho_menu {display:inline;float:left;width:1000px;height:55px;text-align:left;}
+#cabecalho_menu a { height:39px;display:block; padding:0 21px 0 21px; margin:7px 0 0 1px;float:left;text-decoration:none;font-size:18px; cursor:pointer; line-height:35px;color:#ccc }
+#cabecalho_menu a:hover { text-decoration:none;color:#fff;background:url(../images/estrutura/fundo_menu_hover.jpg) repeat-x } 
+#current { background:url(../images/estrutura/fundo_menu_current.jpg) repeat-x; color:#fff !important }
+#corpo { width:1000px;margin:0 auto;background:#fff  }
+#corpo h1 { color:#034b85;text-align:left }
+#corpo p { color:#6a6a6a;text-align:left; }
+#corpo_esquerda { display:inline;float:left;width:800px }
+#corpo_direita { display:inline;float:left;width:200px;background:#ccc;margin-top:3px }
+#rodape { width:1000px;height:200px;margin:0 auto }
+#rodape p { color:#8ab7c1 }
+#rodape_esq { display:inline;float:left;width:232px;height:180px;margin-top:10px }
+#rodape_esq h2 { font-family:OpenSansS; text-align:left; font-size: 20px; line-height:20px; color: #03c0fd; }
+#rodape_esq ul li { list-style: square; text-align:left; margin-top:10px; color: #fff; }
+#rodape_esq a { text-decoration: none;color:#888; }
+#rodape_esq a:hover { text-decoration: underline }
+#rodape_current { font-weight:bold;color:#03c0fd !important }
+#rodape_cen { display:inline;float:left;width:468px;height:180px;margin-top:10px }
+#rodape_cen_top { display:inline;float:left;width:468px;height:100px; }
+#rodape_cen_bot { display:inline;float:left;width:468px;height:100px; }
+#rodape_cen_bot p { font-size:11px;  }
+#rodape_cen_bot a { color:#888;text-decoration:none }
+#rodape_cen_bot a:hover { text-decoration: underline }
+#rodape_dir { display:inline;float:left;width:300px;height:180px;margin-top:10px;background:url(../images/estrutura/web_semantica.jpg) no-repeat }
+#rodape_dir_top { display:inline;float:left;width:300px;height:140px; }
+#rodape_dir_bot { display:inline;float:left;width:300px;height:40px; }
+#rodape_dir p { text-align:right;padding:65px 8px 0 0;font-size:12px; font-weight:bold;}
+
+
+/******* CONTEUDO *************/
+
+h2.titulo.grande {
+font-family:OpenSansS;
+text-align:left;
+font-size: 32px;
+line-height:32px;
+color: #000;
+margin-bottom: 26px;
+}
+h2.titulo {
+font-size: 18px;
+font-weight: bold;
+color: #393636;
+margin: 0 0 5px;
+text-align:left;
+padding:5px;
+}
+h3.titulo.grande {
+font-family:OpenSansS;
+text-align:left;
+font-size: 26px;
+line-height:32px;
+color: #484848;
+margin-bottom: 26px;
+text-align:left;
+}
+h3.titulo {
+font-size: 16px;
+font-weight: bold;
+color: #393636;
+margin: 0 0 10px;
+text-align:left;
+padding:5px;
+}
+.box-pequeno {
+display:inline;
+float: left;
+width: 470px;
+}
+.box-medio {
+display:inline;
+float: left;
+width: 770px;
+margin:20px 0 20px 0;
+}
+.box-grande {
+display:inline;
+float: left;
+width: 1000px;
+margin:20px 0 0 0;
+}
+.box-medio ul li { 
+	list-style: square;
+	color:#6a6a6a;
+	text-align:left;
+}
+.box-conteudo {
+display:inline;
+float: left;
+line-height: 150%;
+margin-top: 18px;
+padding-top: 6px;
+}
+.box-conteudo-medio {
+width: 500px;
+display:inline;
+position: relative;
+float: left;
+line-height: 150%;
+margin-top: 18px;
+padding-top: 6px;
+}
+.box-conteudo-grande {
+width: 770px;
+display:inline;
+position: relative;
+float: left;
+line-height: 150%;
+margin-top: 18px;
+padding-top: 6px;
+}
+.box-direita {
+	background:#ddd;margin:8px 8px 0 8px
+}
+.box-margin-left {
+	margin-left: 30px;
+}
+/********************/
+
+.botaosis {
+	display:inline;
+	height:40px;
+	float:left;	
+}
+.botaosis a {
+	display: inline;
+	height: 30px;
+	float:left;
+	margin-left: 2px;
+	background: url(../images/estrutura/botaosis_esq.png) no-repeat left top;
+	text-decoration: none	
+}
+.botaosis a span {
+	display: inline;
+	margin-left:8px;
+	padding-right:30px;
+	height: 30px;
+	float:left;
+	font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif ;
+	cursor: pointer;
+	line-height:28px;
+	font-weight: bold;
+	color: #fff;
+}
+.botaosis_leiamais {
+	background: url(../images/estrutura/botaosis_leiamais.png) no-repeat right top 
+}
+.botaosis_download {
+	background: url(../images/estrutura/botaosis_download.png) no-repeat right top 
+}
+.botaosis_online {
+	background: url(../images/estrutura/botaosis_online.png) no-repeat right top 
+}
+.botaosis_enviaremail {
+	background: url(../images/estrutura/botaosis_enviaremail.png) no-repeat right top 
+}
+.botaosis_enviarorcamento {
+	background: url(../images/estrutura/botaosis_enviarorcamento.png) no-repeat right top 
+}
+.botaosis a:hover {
+	background-position: 0 -30px
+}
+.botaosis a:hover span {
+	color: #fff;
+	background-position: 100% -30px
+}
+.btndir {
+	display:inline;
+	float:right;
+}
+#menufaixa { margin:0 auto;width:1000px;height:100px;height:30px }
+#menu { margin:0 auto;width:1000px }
+
+form { display:inline;float:left }
+#formdir { display:inline;float:left;width:500px;height:820px;margin:50px 0 50px 250px;background:#fdfce6;border-top:1px solid #a4d2fc;border-left:1px solid #a4d2fc;border-bottom:2px solid #ddd; border-right:2px solid #ddd }
+#formdir h2 { display:block;width:100%;color:#fff;background: url(../../images/bn/images/titulos_bg.jpg) repeat-x }	
+#formdir h3 { display:block;width:100%;color:#09F;margin:0 }	
+textarea { background:#fff;border:1px solid #bbb;margin:0 }
+input { background:#fff;border:1px solid #bbb;margin:0 }
+label { font-size:11px;margin:0 }
+select { background:#fff;border:1px solid #bbb;margin:0 }
+
+.campo_bloco {
+	display:inline;float:left;margin: 0 0 6px 4px;
+}
+.campo_bloco input {
+	display:inline;float:left;
+	height:20px;
+	font-size:14px
+}
+.campo_bloco label {
+	display:inline;float:left;
+	font-size:12px;
+	line-height:16px;
+	height:16px;
+	color:#000
+}
+#bt_top_pesq a {
+	display: inline;
+	width: 36px;
+	height: 84px;
+	float:right;
+	cursor:pointer;
+	background: url(../images/home/w3c.gif) no-repeat top
+}
+#bt_top_pesq a:hover {
+	width: 36px;
+	height: 84px;
+	background-position: 0 -84px
+}
+
+#bt_youtube a, #bt_face a {
+	display: inline;
+	width: 35px;
+	height: 36px;
+	float:left;
+	margin-top:10px;
+	margin-right:2px;
+	cursor:pointer
+}
+#bt_youtube a {
+	background: url(../images/home/youtube_face.png) no-repeat top;
+}
+#bt_youtube a:hover {
+	background-position: 0 -36px;
+}
+
+
+#bt_face a {
+	background: url(../images/home/youtube_face.png) 0 -72px;
+}
+#bt_face a:hover {
+	background-position: 0 -108px;
+}
+
+
+#bt_bottom_w3c_html5 a, #bt_bottom_w3c_css a {
+	display: inline;
+	float:left;	
+	width: 120px;
+	height: 40px;
+	cursor:pointer
+}
+#bt_bottom_w3c_html5 a {
+	background: url(../images/estrutura/valid_html5.jpg) no-repeat left top;
+}
+#bt_bottom_w3c_css a {
+	background: url(../images/estrutura/valid_css.jpg) no-repeat left top;
+}
+#bt_bottom_w3c_html5 a:hover, #bt_bottom_w3c_css a:hover {
+	background-position: left bottom;
+}
+
+
+/* ======================== Manipulando Formulários ========================== */
+/* Botões */
+#bt_facebook a, #bt_twitter a {width:50px;height:49px;display:inline;float:left; text-decoration:none}
+#bt_facebook, #bt_twitter {}
+#bt_facebook {width:50px;height:49px; background:url(../images/contatos/bt_facebook.jpg) no-repeat left top; display:inline; float:left;margin:5px 10px 5px 0}
+#bt_twitter {width:49px;height:49px; background:url(../images/contatos/bt_twitter.jpg) no-repeat left top; display:inline; float:left;margin:5px 0 5px 10px}
+#bt_facebook:hover, #bt_twitter:hover {background-position:0 -49px}
+
+/* Formulários */
+.bt_enviar {height:28px !important;width:94px;background:#003300; border:1px solid #7e7367; font-size:14px; font-weight:bold; color:#EFEFEF}
+.bt_enviar:hover {background:#006600;cursor:pointer}
+
+#form_contato .campo_bloco label {font-weight:bold; font-size:15px; color:#645e57; float:right; height:23px; line-height:23px}
+#form_contato .campo_bloco input, #form_contato .campo_bloco textarea {font-family:Verdana, Geneva, sans-serif; font-size:14px; }
+/* border-radius:5px */
+#form_trabalhe .campo_bloco label {font-weight:bold; font-size:15px; color:#645e57; float:right; height:23px; line-height:23px}
+#form_trabalhe .campo_bloco input, #form_contato .campo_bloco textarea {font-family:Verdana, Geneva, sans-serif; font-size:14px}
